@@ -11,8 +11,16 @@ namespace TextEditor
     /// </summary>
     public class XMLLogic
     {
+        /// <summary>
+        /// This remembers the current file that is open
+        /// </summary>
         public string fileCurrentlyOpen;
 
+        /// <summary>
+        ///  Will open the file for you and return it is content
+        /// </summary>
+        /// <param name="fileLocation">A path to the location of the XML file</param>
+        /// <returns>A string that contains the XML information that was loaded from the file</returns>
         public string OpenFile(string fileLocation)
         {
             if (!File.Exists(fileLocation))
