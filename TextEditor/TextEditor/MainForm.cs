@@ -15,6 +15,11 @@ namespace TextEditor
     public partial class MainForm : Form
     {
         /// <summary>
+        /// XmlFile that will hold the logic for saving and deleting
+        /// </summary>
+        XMLLogic xmlFile = new XMLLogic();
+
+        /// <summary>
         /// Init
         /// </summary>
         public MainForm()
@@ -49,7 +54,30 @@ namespace TextEditor
         /// <param name="e"></param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
+            // Set filter options and filter index.
+            openFileDialog1.Filter = "XML Files (.xml)|*.xml";
+            openFileDialog1.FilterIndex = 1;
+
+            openFileDialog1.Multiselect = false;
+
+            // Call the ShowDialog method to show the dialog box.
+            DialogResult result = openFileDialog1.ShowDialog();
+
+            // Process input if the user clicked OK.
+            if (result == DialogResult.OK) // Test result.
+            {
+                try
+                {
+                    string xmlText = xmlFile.OpenFile(openFileDialog1.FileName);
+                    RTBXML.Text = xmlText;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error has occured opening the file");
+                }
+            }
         }
     }
 }

@@ -9,9 +9,11 @@ namespace TextEditor
     /// <summary>
     /// Class that will hold all the logic for opening and saving files
     /// </summary>
-    public static class XMLLogic
+    public class XMLLogic
     {
-        public static string OpenFile(string fileLocation)
+        public string fileCurrentlyOpen;
+
+        public string OpenFile(string fileLocation)
         {
             if (!File.Exists(fileLocation))
             {
@@ -23,6 +25,7 @@ namespace TextEditor
                 using (StreamReader sr = new StreamReader(fileLocation))
                 {
                     String text = sr.ReadToEnd();
+                    fileCurrentlyOpen = fileLocation;
                     return text;
                 }
             }
