@@ -9,8 +9,14 @@ using System.Windows.Forms;
 
 namespace TextEditor
 {
+    /// <summary>
+    /// The MainForm class that holds the logic for the main window
+    /// </summary>
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// Init
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
