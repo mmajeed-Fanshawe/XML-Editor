@@ -16,6 +16,11 @@ namespace TextEditor
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Will Close the window
+        /// </summary>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">EventArgs</param>
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
