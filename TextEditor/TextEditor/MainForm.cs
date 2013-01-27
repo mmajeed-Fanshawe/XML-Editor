@@ -41,5 +41,15 @@ namespace TextEditor
         {
             RTBXML.Clear();
         }
+
+        /// <summary>
+        /// Handler for the open toolstip that will open a new textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
