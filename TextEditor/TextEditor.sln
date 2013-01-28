@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "TextEditor\TextEditor.csproj", "{3823EFAD-BF32-420B-A170-E6022FCA9656}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditorGUI", "TextEditor\TextEditorGUI.csproj", "{3823EFAD-BF32-420B-A170-E6022FCA9656}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditorTest", "TextEditorTest\TextEditorTest.csproj", "{B94BBE36-FC23-4816-962D-4FD0DB4C1E1B}"
 EndProject

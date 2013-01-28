@@ -44,6 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XMLLogicTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextEditorLibrary\TextEditorLibrary.csproj">
+      <Project>{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}</Project>
+      <Name>TextEditorLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
