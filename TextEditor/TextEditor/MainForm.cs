@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using TextEditorLibrary;
 
 namespace TextEditor
 {
@@ -17,7 +18,7 @@ namespace TextEditor
         /// <summary>
         /// XmlFile that will hold the logic for saving and deleting
         /// </summary>
-        XMLLogic xmlFile = new XMLLogic();
+        TextEditorLibrary.XMLLogic xmlFile = new XMLLogic();
 
         /// <summary>
         /// Init

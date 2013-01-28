@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "TextEditor\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditorTest", "TextEditorTest\TextEditorTest.csproj", "{B94BBE36-FC23-4816-962D-4FD0DB4C1E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditorLibrary", "TextEditorLibrary\TextEditorLibrary.csproj", "{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{B94BBE36-FC23-4816-962D-4FD0DB4C1E1B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B94BBE36-FC23-4816-962D-4FD0DB4C1E1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B94BBE36-FC23-4816-962D-4FD0DB4C1E1B}.Release|x86.ActiveCfg = Release|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9BE60169-CF1D-42FF-9920-1EFDFAB8B086}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
