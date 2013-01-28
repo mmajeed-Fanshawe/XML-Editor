@@ -50,8 +50,8 @@ namespace TextEditor
         /// <summary>
         /// Handler for the open toolstip that will open a new textbox
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">EventArgs</param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -78,6 +78,49 @@ namespace TextEditor
                     MessageBox.Show(ex.Message, "Error has occured opening the file");
                 }
             }
+        }
+
+        /// <summary>
+        /// Handler for the save toolstip that will save the file
+        /// </summary>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">EventArgs</param>
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                xmlFile.SaveFile(RTBXML.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error has occured while saving the file");
+            }
+        }
+
+         /// <summary>
+        /// Handler for the save as toolstip that will save the file where he wants
+        /// </summary>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">EventArgs</param>
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Displays a SaveFileDialog so the user can save the xml
+           SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+           saveFileDialog1.Filter =  "XML Files (.xml)|*.xml";
+           saveFileDialog1.ShowDialog();
+
+           // If the file name is not an empty string open it for saving.
+           if (!string.IsNullOrEmpty(saveFileDialog1.FileName))
+           {
+               try
+               {
+                   xmlFile.SaveFile(saveFileDialog1.FileName);
+               }
+               catch (Exception ex)
+               {
+                   MessageBox.Show(ex.Message, "Error has occured while saving the file");
+               }
+           }
         }
     }
 }
