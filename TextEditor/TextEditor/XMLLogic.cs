@@ -16,7 +16,7 @@ namespace TextEditor
         /// <summary>
         /// This will contain the location of the xst file
         /// </summary>
-        public const string xsdFile = "XMLSchema.xsd";
+        public const string xsdFile = @"..\..\Resources\XMLSchema.xsd";
 
         /// <summary>
         /// This remembers the current file that is open
