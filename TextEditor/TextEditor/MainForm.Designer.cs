@@ -41,9 +41,10 @@
             // 
             // RTBXML
             // 
-            this.RTBXML.Location = new System.Drawing.Point(12, 27);
+            this.RTBXML.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RTBXML.Location = new System.Drawing.Point(0, 28);
             this.RTBXML.Name = "RTBXML";
-            this.RTBXML.Size = new System.Drawing.Size(958, 720);
+            this.RTBXML.Size = new System.Drawing.Size(982, 731);
             this.RTBXML.TabIndex = 0;
             this.RTBXML.Text = "";
             // 
